@@ -19,11 +19,7 @@ object Blog extends App {
   val index = readFile("index.html").replaceAllLiterally("<li></li>", links.map { case (slug, title) => s"""<li><a href="/$slug">$title</a></li>""" }.mkString)
   writeFile("index.html", layout.replaceAllLiterally("<body></body>", s"<body>$index</body>"))
 
-  println(
-    "\nBoom! Blog generated! Here are the locations for nginx: \n\n" +
-    links.map(link => "location /" + link._1 + "$ { index " + link._1 + ".html; }").mkString("\n") +
-    "\n"
-  )
+  println("\nBoom!\nBlog generated!\n")
 
   def readFile(file: String) = scala.io.Source.fromFile("./" + file).mkString
   def writeFile(file: String, content: String) = {
