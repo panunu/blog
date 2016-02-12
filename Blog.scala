@@ -20,8 +20,9 @@ object Blog extends App {
   writeFile("index.html", layout.replaceAllLiterally("<body></body>", s"<body>$index</body>"))
 
   println(
-    "Boom! Blog generated! Here are the locations for nginx \n\n" +
-    links.map(link => "location = " + link._1 + "$ { index " + link._1 + ".html; }").mkString("\n")
+    "\nBoom! Blog generated! Here are the locations for nginx: \n\n" +
+    links.map(link => "location /" + link._1 + "$ { index " + link._1 + ".html; }").mkString("\n") +
+    "\n"
   )
 
   def readFile(file: String) = scala.io.Source.fromFile("./" + file).mkString
