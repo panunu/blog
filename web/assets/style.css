@@ -1,0 +1,103 @@
+body {
+    padding-top: 5vh;
+
+    font-family: "Open Sans", serif;
+    font-size: 20px;
+    line-height: 1.8;
+
+    background-color: #fcfcfc;
+    color: #555;
+}
+
+aside {
+    padding: 10vh 0 20vh;
+    text-align: center;
+    color: #888;
+}
+
+aside h3 {
+    font-size: 58px;
+    margin-bottom: 40px;
+    line-height: 1;
+}
+
+aside img {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+section {
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+}
+
+nav li:last-of-type {
+    border-bottom: none;
+}
+
+nav ul li time {
+    display: block;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+
+    font-size: 32px;
+}
+
+article {
+    padding-bottom: 100px;
+}
+
+article header {
+    display: block;
+    margin-bottom: 50px;
+    text-align: center;
+    opacity: 0.9;
+}
+
+article header h2 {
+    font-size: 48px;
+    line-height: 1;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+article p {
+    margin-bottom: 30px;
+}
+
+article footer {
+    margin-top: 40px;
+
+    font-size: 16px;
+    font-style: italic;
+    color: #888;
+}
+
+.back-button {
+    margin: 50px auto 100px;
+    text-align: center;
+}
+
+.back-button a {
+    text-decoration: none;
+    color: orange;
+    opacity: 0.5;
+}

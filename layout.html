@@ -3,89 +3,7 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Panun Blogsta</title>
-    <style>
-        body {
-            padding-top: 5vh;
-
-            font-family: "Open Sans", serif;
-            font-size: 20px;
-            line-height: 1.8;
-
-            background-color: #fcfcfc;
-            color: #555;
-        }
-
-        aside {
-            padding: 10vh 0 20vh;
-            text-align: center;
-            color: #888;
-        }
-
-        aside h3 {
-            font-size: 58px;
-            margin-bottom: 40px;
-            line-height: 1;
-        }
-
-        aside img {
-            width: 75px;
-            height: 75px;
-            border-radius: 50%;
-        }
-
-        section {
-            width: 95%;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        nav ul {
-            list-style: none;
-            padding: 0;
-            font-size: 32px;
-            text-align: center;
-        }
-
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        article {
-            padding-bottom: 300px;
-        }
-
-        article:last-of-type {
-            padding-bottom: 100px;
-        }
-
-        article header {
-            display: block;
-            margin-bottom: 50px;
-            text-align: center;
-            opacity: 0.9;
-        }
-
-        article header h2 {
-            font-size: 48px;
-            line-height: 1;
-            margin-top: 10px;
-            margin-bottom: 10px;
-            color: #333;
-        }
-
-        article p {
-            margin-bottom: 30px;
-        }
-
-        article footer {
-            margin-top: 40px;
-
-            font-size: 16px;
-            font-style: italic;
-            color: #888;
-        }
-    </style>
+    <link href="assets/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
     <script>
@@ -102,5 +20,11 @@
 </head>
 
 <body></body>
+
+<script type="text/javascript">
+    if (window.location.pathname != '/') {
+        document.body.innerHTML += '<div class="back-button"><a href="/">Kaikki kirjoitukset</a></div>';
+    }
+</script>
 
 </html>
